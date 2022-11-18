@@ -24,7 +24,7 @@ public class ServerTICTAC {
                     dout.writeUTF(PLAYPOSITION);
                     dout.flush();
                     dout.close();
-                    }
+                    }/*inverse symetric of the client side*/
 
             }
             DataOutputStream doutend= new DataOutputStream(s.getOutputStream());

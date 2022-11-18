@@ -29,7 +29,7 @@ public class ClientTICTAC {
                     GAMEGRID.update(str);
                     System.out.println("message="+str);
 
-                }
+                }/*inverse symetric of the server side*/
 
             }
             DataOutputStream doutend= new DataOutputStream(s.getOutputStream());
