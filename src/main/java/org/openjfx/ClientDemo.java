@@ -8,7 +8,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class ClientDemo {
-    public static void main(String[] args){try
+    public static void main(String[] args){
+        for(int i=0;i<5;i++){
+        try
 
     {
 
@@ -36,6 +38,7 @@ public class ClientDemo {
         s.close();
     }catch (Exception e){
         System.err.println(e);}
+        }
 
 
 }}
