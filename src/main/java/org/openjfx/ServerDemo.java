@@ -31,6 +31,20 @@ public class ServerDemo {
         }catch (Exception e){
         System.err.println(e);}
         }
+        try{
+            ServerSocket ss = new ServerSocket(6666);
+            Socket s = ss.accept();
+
+            /*TOUR 1: On envoie un message de match nul si on arrive a la fin de la boucle for sans victoire*/
+            DataInputStream dis = new DataInputStream(s.getInputStream());
+            String str = (String) dis.readUTF();
+            System.out.println("message=" + str);
+            ss.close();
+        }
+        catch(Exception e)
+        {
+            System.err.println(e);
+        }
 
 
 

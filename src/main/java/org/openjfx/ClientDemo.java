@@ -32,13 +32,24 @@ public class ClientDemo {
         DataInputStream dis = new DataInputStream(s.getInputStream());
         String str = (String) dis.readUTF();
         System.out.println("message=" + str);
-
-
-
         s.close();
     }catch (Exception e){
         System.err.println(e);}
         }
+        try{
+            Socket s = new Socket("localhost",6666);
 
+            /*TOUR 1: On envoie un message de match nul si on arrive a la fin de la boucle for sans victoire*/
+            System.out.println("Matchnul");
+            DataOutputStream dout = new DataOutputStream(s.getOutputStream());
+            dout.writeUTF("Matchnul");
+            dout.flush();
+            dout.close();
+            s.close();
+        }
+        catch(Exception e)
+        {
+            System.err.println(e);
+        }
 
 }}
