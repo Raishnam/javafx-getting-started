@@ -7,7 +7,9 @@ import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/*
 public class ClientTICTAC {
+
     public static void main(String[] args){
         try{
             ServerSocket ss =new ServerSocket(6666);
@@ -30,7 +32,7 @@ public class ClientTICTAC {
                     System.out.println("message="+str);
 
                 }/*inverse symetric of the server side*/
-
+/*
             }
             DataOutputStream doutend= new DataOutputStream(s.getOutputStream());
             doutend.writeUTF("END OF GAME");
@@ -41,3 +43,6 @@ public class ClientTICTAC {
             System.err.println(e);}
     }
 }
+
+
+ */

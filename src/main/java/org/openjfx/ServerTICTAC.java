@@ -2,7 +2,7 @@ package org.openjfx;
 import java.io.*;
 import java.net.*;
 
-
+/*
 public class ServerTICTAC {
     public static void main(String[] args){
         try{
@@ -24,7 +24,7 @@ public class ServerTICTAC {
                     dout.writeUTF(PLAYPOSITION);
                     dout.flush();
                     dout.close();
-                    }/*inverse symetric of the client side*/
+                    }
 
             }
             DataOutputStream doutend= new DataOutputStream(s.getOutputStream());
@@ -36,3 +36,4 @@ public class ServerTICTAC {
             System.err.println(e);}
     }
 }
+*/
