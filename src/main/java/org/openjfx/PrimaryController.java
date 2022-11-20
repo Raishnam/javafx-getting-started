@@ -115,8 +115,8 @@ public class PrimaryController {
         roundNumber++;
         resultat = verify(gamelist);
         if (resultat == "Null" && roundNumber == 9){System.out.println("There is a draw"); myGridPane.setDisable(true);}
-        if (resultat == "X"){System.out.println("X win"); myGridPane.setDisable(true);}
-        if (resultat == "O"){System.out.println("O win"); myGridPane.setDisable(true);}
+        if (resultat == "X"){System.out.println("X won"); myGridPane.setDisable(true);}
+        if (resultat == "O"){System.out.println("O won"); myGridPane.setDisable(true);}
 
 
     };
